@@ -48,20 +48,44 @@ table {
 }
 /*
   ========================================
+  Grid
+  ========================================
+*/
+.container{
+	margin: 0 auto;
+	width: 960px;
+}
+.container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*
+  ========================================
   Header
   ========================================
 */
-#img-scroller{
-	border: 10px solid #d7182a;
-	width: 960px;
+.header-wrapper{
+	position: relative;
+}
+.img-scroller{
+	position: absolute;
 }
 /*
   ========================================
   Navigation
   ========================================
 */
-#nav-bg{
+#bg-color-strip{
 	background: #d7182a;
+	height: 46px;
+	width: 100%;
+	position: absolute;
+	top: 94px;
+	z-index: 2;
+}
+nav li{
+	display: inline-block;
 }
 /*
   ========================================
