@@ -48,29 +48,51 @@ table {
 }
 /*
   ========================================
-  Grid
-  ========================================
-*/
-.container{
-	margin: 0 auto;
-	width: 960px;
-}
-.container{
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-/*
-  ========================================
   Header
   ========================================
 */
-.header-wrapper{
+.scroller-wrapper{
+	height: 442px;
+}
+#img-scroller{
 	position: relative;
+	overflow: hidden;
+	margin: 0 auto 0 auto;
 }
-.img-scroller{
+#img-scroller ul{
+	position: relative;
+	height: 436px;
+}
+#img-scroller ul li {
+  position: relative;
+  float: left;
+  height: 436px; 
+  width: 960px;
+}
+a.control_next, a.control_previous{
 	position: absolute;
+	top: 40%;
+	z-index: 999;
+	padding: 4% 3%;
+	height: auto;
+	width: auto;
+	background: #2a2a2a;
+	opacity: 0.8;
+	text-decoration: none;
+	color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
 }
+a.control_next:hover, a.control_previous:hover{
+	opacity: 1;
+	-webkit-transition: all 0.2s ease;
+}
+
+a.control_next{
+	right: 0;
+}
+
 /*
   ========================================
   Navigation
@@ -82,10 +104,34 @@ table {
 	width: 100%;
 	position: absolute;
 	top: 94px;
+	right: 0px;
 	z-index: 2;
 }
 nav li{
 	display: inline-block;
+}
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
+}
+.primary-nav{
+	position: absolute;
+	top: 106px;
+	z-index: 3;
+	padding-left: 30px;
+}
+.nav-item{
+	color: white;
+	font-family: "Arial",sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+.divider{
+	color: #dad9d9;
+	margin-right: 9px; 
+	margin-left: 9px;
 }
 /*
   ========================================

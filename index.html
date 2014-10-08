@@ -3,38 +3,79 @@
 <head>
 	<meta charset="utf-8">
 	<title>Los Angeles County Museum of Art | LACMA</title>
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="main.css">
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<header>
 		<div id="bg-color-strip"></div>
-		<div class="container header-wrapper">
-			<div class="img-scroller">
-				<img src="images/painting.png">
+		<div class="container scroller-wrapper">
+			<div id="img-scroller">
+				<a href="#" class="control_next">></a>
+				<a href="#" class="control_previous"><</a>
+				<ul>
+					<li>
+						<a>
+							<img src="images/altoon.png">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/calder.png">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/futbol_image.png">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/korean_art.png">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/museum.png">
+						</a>
+					</li>
+					<li>
+						<a>
+							<img src="images/painting.png">
+						</a>
+					</li>
+				</ul>
+				<!--<end images ul>-->
 			</div>
 			<nav class="primary-nav">
-				Navigation
 				<ul>
-					<li>Visit</li>
-					<li>Art</li>
-					<li>On View</li>
-					<li>Programs</li>
-					<li>Support</li>
-					<li>LACMA</li>
-					<li>Shop</li>
+					<li class="nav-item">Visit</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">Art</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">On View</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">Programs</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">Support</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">LACMA</li>
+					<span class="divider"> | </span>
+					<li class="nav-item">Shop</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<section class="container">
-		Main Content
-		<section>
+		<section class="four columns red">
 			Calendar Column
 		</section>
-		<section>
+		<section class="blue nine columns">
 			Blog Column
 		</section>
-		<section>
+		<section class="red three columns">
 			Highlights Column
 		</section>
 	</section>
