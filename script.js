@@ -12,9 +12,9 @@ jQuery(document).ready(function ($) {
 
 	$('#img-scroller ul').css({width:sliderUlWidth, marginLeft: - slideWidth});
 
-	setInterval(function () {
-        moveRight();
-    }, 3000);
+	// setInterval(function () {
+ //        moveRight();
+ //    }, 4000);
 
 	function moveLeft() {
 		$('#img-scroller ul').animate({

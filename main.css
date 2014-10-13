@@ -110,6 +110,13 @@ a.control_next{
 nav li{
 	display: inline-block;
 }
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
 .red{
 	background-color: red;
 }
@@ -117,22 +124,92 @@ nav li{
 	background-color: blue;
 }
 .primary-nav{
-	position: absolute;
-	top: 106px;
-	z-index: 3;
-	padding-left: 30px;
+	padding-top: 14px;
 }
-.nav-item{
+.primary-nav ul{
+	padding-left: 30px;
+	float: left;
+	display: inline;
+}
+.nav-item a{
+	text-decoration: none;
 	color: white;
 	font-family: "Arial",sans-serif;
 	font-weight: 600;
 	font-size: 0.9em;
+}
+.nav-item a:hover{
+	color: black;
+}
+.nav-item ul{
+	display: none;
+}
+.first-column{
+	padding-top: 20px;
+}
+.not-first-column{
+	padding-top: 20px;
+}
+.primary-nav ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background: #d7182a;
+	width: 960px;
+	height: 130px;
+	padding: 0;
+}
+.primary-nav ul ul li{
+	width: 215px;
+	border-bottom: 1px solid #dad9d9;
+	margin-left: 20px;
+	line-height: 120%
+}
+.primary-nav ul ul a{
+	color: #dad9d9;
+	text-transform: uppercase;
+	font-size: 0.7em;
 }
 .divider{
 	color: #dad9d9;
 	margin-right: 9px; 
 	margin-left: 9px;
 }
+.home-search-form{
+	width: 200px;
+	padding-left: 70px;
+}
+.home-form-input{
+	padding: 2px 45px 2px 0px; 
+}
+.home-form-input-button{
+	background-color: white;
+	position: relative;
+	color: #d7182a;	
+	padding-bottom: 2px; 
+}
+
+/*
+  ========================================
+  General Form Styles
+  ========================================
+*/
+form{
+	display: inline-block;
+
+}
+input {
+  border: 1px solid white;
+  background-color: #d7182a;
+  color: white;
+	z-index: 1;
+  margin: 0;
+  font-size: 0.4em;
+  text-transform: uppercase;
+}
+
+
 /*
   ========================================
   Footer
@@ -140,4 +217,11 @@ nav li{
 */
 #footer-wrapper{
 	border-top: 1px solid #000;
+}
+.footer-inner{
+	padding-top: 20px;
+}
+.footer-nav{
+	font-size: 0.7em;
+	text-transform: uppercase;
 }
