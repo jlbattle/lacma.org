@@ -222,6 +222,68 @@ input {
 	padding-top: 20px;
 }
 .footer-nav{
-	font-size: 0.7em;
+	font-size: 0.6em;
+	text-decoration: none;
+	font-family: "Arial",sans-serif;
 	text-transform: uppercase;
+	float: left;
+	padding-bottom: 20px;
+	margin-top: 3px;
+	margin-bottom: 15px;
+}
+.footer-nav ul{
+	list-style: disc;
+}
+.footer-nav ul li{
+	float: left;
+	padding-right: 15px;
+	list-style: disc;
+	color: black;
+}
+.footer-nav ul li a{
+	text-decoration: none;
+}
+.footer-nav ul li a:hover{
+	text-decoration: underline;
+}
+.footer-social-links{
+	float: right;
+	margin-right: 10px;  
+}
+.footer-social-links a{
+	display: block;
+	float: left;
+	text-indent: -9000px;
+	background: url(images/sprites.png) top left no-repeat;
+	margin-right: 7px;
+}
+#unframed{
+	width: 60px;
+	height: 12px;
+	background-position: -349px -231px;
+}
+#twitter{
+	width: 14px;
+	height: 14px;
+	background-position: -395px -281px;
+}
+#facebook{
+	width: 14px;
+	height: 14px;
+	background-position: -393px -257px;
+}
+#pinterest{
+	width: 14px;
+	height: 14px;
+	background-position: -481px -199px;
+}
+#tumblr{
+	width: 14px;
+	height: 14px;
+	background-position: -481px -230px;
+}
+#instagram{
+	width: 14px;
+	height: 14px;
+	background-position: -481px -257px;
 }
