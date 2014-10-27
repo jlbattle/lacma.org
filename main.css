@@ -92,6 +92,12 @@ a.control_next:hover, a.control_previous:hover{
 a.control_next{
 	right: 0;
 }
+.logo-position{
+	left: 25px;
+	top: 25px;
+	position: absolute;
+	z-index: 10;
+}
 
 /*
   ========================================
@@ -117,11 +123,18 @@ nav ul ul {
 nav ul li:hover > ul {
 	display: block;
 }
+
+.blue{
+	background-color: blue;
+}
 .red{
 	background-color: red;
 }
-.blue{
-	background-color: blue;
+.green{
+	background-color: green;
+}
+.orange{
+	background-color: orange;
 }
 .primary-nav{
 	padding-top: 14px;
@@ -190,6 +203,175 @@ nav ul li:hover > ul {
 	padding-bottom: 2px; 
 }
 
+/*
+  ========================================
+  Main Content Section
+  ========================================
+*/
+.main-content{
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.middle-content{
+	font-family: "Helvetica","Arial",sans-serif;	
+}
+.sidebar-right ul li{
+	margin-bottom: 25px;
+}
+.sidebar-left{
+	font-family: "Helvetica","Arial",sans-serif; 
+	color: black;
+	line-height: 16px;
+	font-size: 75%;
+}
+.sidebar-left ul{
+	margin-top: 5px;
+}
+.sidebar-left-image{
+	height: 66px;
+}
+.sidebar-left ul li a img{
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+#calendar-link{
+	padding: 0 0 6px;
+	text-transform: uppercase;
+	font-size: 85%;
+	color: #010101;
+}
+#calendar-link a{
+	text-decoration: none;
+}
+#calendar-link a:hover{
+	text-decoration: underline;
+}
+.event{
+	position: relative;
+}
+.event-tag{
+	padding: 0 5px;
+	float: left;
+	background-color: red;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.event-tag-position{
+	left: 10px;
+	top: -5px;
+	position: absolute;
+	z-index: 10;
+}
+.event-tag-music{
+	background-color: #EE3286;
+}
+.event-tag-family{
+	background-color: #f79733;
+}
+.event-tag-film{
+	background-color: #43B64B;
+}
+.event-title{
+	color: #0E0E0E;
+	padding-top: 5px;
+	height: 17px;
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 3px;
+}
+.event-description{
+	color: #4A4949;
+}
+.event-content{
+	top: 66px;
+	width: 230px;
+	height: 50px;
+	padding: 0 0px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	border-top: 2px solid white;
+}
+.event-content:hover{
+	background-color: lightgray;
+	padding-top: -2px;
+	border-top: 2px solid green;	
+}
+.blog-top{
+	height: 14px;
+	width: 510px;
+	margin-bottom: 15px;
+}
+#unframed-blog{
+	background-position: -13px -227px;
+	width: 142px;
+	height: 14px;
+}
+#subscribe-blog{
+	background-position: -395px -164px;
+	width: 15px;
+	height: 14px;
+	float: right;
+}
+.subscribe-blog-text{
+	float: right;
+	font-size: 0.7em;
+}
+.blog-post-title{
+	margin-bottom: 5px;
+}
+.blog-post-title a{
+	color: #E31B25;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.blog-post-title a:hover{
+	text-decoration: underline;
+}
+.blog-post-title-date{
+	font-size: 0.8em;
+	margin-bottom: 20px;
+}
+.address-section{
+	margin: 0 auto;
+	width: 309px
+}
+.address-body-styles{
+	width: 278px;
+	line-height: 1.4em;
+}
+.address-body-styles a{
+	color: #E31B25;
+	font-weight: bold;
+	text-decoration: none;
+}
+.address-body-styles a:hover{
+	text-decoration: underline;
+}
+#address-header{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+.blog-post-article{
+	margin-bottom: 3em;
+	font-size: 0.8em;
+}
+.blog-post-article a{
+	color: #E31B25;
+	font-weight: bold;
+	text-decoration: none;
+}
+.blog-post-article a:hover{
+	text-decoration: underline;
+}
+.twitter-section{
+	margin-top: 2em;
+	margin-bottom: 1.2em; 
+}
 /*
   ========================================
   General Form Styles

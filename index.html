@@ -5,6 +5,7 @@
 	<title>Los Angeles County Museum of Art | LACMA</title>
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/png" href="favicon.gif">
 	<script src="jquery.js"></script>
 	<script src="script.js"></script>
 </head>
@@ -142,7 +143,11 @@
 			</nav>
 		</div>
 		<div class="container scroller-wrapper">
-		<!--	<img src="images/lacma_logo.png"> -->
+			<div class="logo-position">
+				<div class="logo">
+					<img src="images/lacma_logo.png">
+				</div>
+			</div>
 			<div id="img-scroller">
 				<a href="#" class="control_next">></a>
 				<a href="#" class="control_previous"><</a>
@@ -182,28 +187,130 @@
 			</div>			
 		</div>
 	</header>
-	<section class="container">
-		<section class="four columns red">
-			Calendar Column
-		</section>
-		<section class="blue nine columns">
-			Blog Column
-			
-			<h1>Lrrreconcilable Ndndifferences</h1>
-<p>There's one way and only one way to determine if an animal is intelligent. Dissect its brain! I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense. You, a bobsleder!? That I'd like to see! Oh, how awful. Did he at least die painlessly? &hellip;To shreds, you say. Well, how is his wife holding up? &hellip;To shreds, you say.</p>
-<h2>The Prisoner of Benda</h2>
-<p>Dr. Zoidberg, that doesn't make sense. But, okay! I don't 'need' to drink. I can quit anytime I want! When the lights go out, it's nobody's business what goes on between two consenting adults. This opera's as lousy as it is brilliant!  Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! I'm sorry, guys. I never meant to hurt you. Just to destroy everything you ever believed in.</p>
-<h3>Insane in the Mainframe</h3>
-<p>It must be wonderful. Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Who are you, my warranty?! How much did you make me?</p>
-<h4>I, Roommate</h4>
-<p>Oh yeah, good luck with that. Kif might! Why, those are the Grunka-Lunkas! They work here in the Slurm factory. Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar.</p>
-<h5>Roswell That Ends Well</h5>
-<p>Oh Leela! You're the only person I could turn to; you're the only person who ever loved me. Oh sure! Blame the wizards! Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar.</p>
+	<section class="container main-content">
+		<section class="four columns sidebar-left">
+			<p id="calendar-link"><a href="#">View Calendar</a></p>
+			<ul>
+				<li>
+					<div class="event">
+						<div class="event-tag-position">
+							<div class="event-tag event-tag-film">
+								Film
+							</div>
+						</div>
+						<div class="sidebar-left-image">
+							<a href="#">
+								<img src="images/sidebar_left_image1.jpg">
+							</a>
+						</div>						
+						<div class="event-content">
+							<p class="event-title">
+								Canceled: Listen Up Philip
+							</p>
+							<p class="event-description">
+								7:30PM Thursday, October 23
+							</p>
+						</div>
+					</div>
+				</li>
 
 
+				<li>
+					<div class="event">
+						<div class="event-tag-position">
+							<div class="event-tag event-tag-family">
+								Family
+							</div>
+						</div>
+						<div class="sidebar-left-image">
+							<a href="#">
+								<img src="images/sidebar_left_image2.jpg">
+							</a>
+						</div>						
+						<div class="event-content">
+							<p class="event-title">
+								Story Time
+							</p>
+							<p class="event-description">
+								2:00PM Friday, October 24
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="event">
+						<div class="event-tag-position">
+							<div class="event-tag event-tag-music">
+								Music
+							</div>
+						</div>
+						<div class="sidebar-left-image">
+							<a href="#">
+								<img src="images/sidebar_left_image3.jpg">
+							</a>
+						</div>						
+						<div class="event-content">
+							<p class="event-title">
+								Theo Sunders
+							</p>
+							<p class="event-description">
+								6:00PM Friday, October 24
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</section>
-		<section class="red three columns">
-			Highlights Column
+		<section class="nine columns middle-content">
+			<div>
+				<div class="footer-social-links">
+					<div class="blog-top">
+						<a href="#" title="Unframed the LACMA Blog" id="unframed-blog"></a>
+						<a href="#" title="Subscribe" id="subscribe-blog"></a><p class="subscribe-blog-text">SUBSCRIBE</p>
+					</div>
+				</div>
+
+				<p class="blog-post-title">
+					<a href="#">
+						Amy Murphy and Michael Maltzan on Haunted Screens Design
+					</a>
+				</p>
+				<p class="blog-post-title-date">October 27, 2014</p>
+				<div class="blog-post-article">
+					<p>
+						Frederick Fisher and Partners, Frank Gehry, ...
+						<a href="#">Read On »</a>
+					</p>
+				</div>
+			</div>
+			<div class="blue twitter-section">
+				Twitter Section
+			</div>
+			<div class="address-section">
+				<p id="address-header">The Los Angeles County Museum of Art</p>
+				<p class="blog-post-title-date address-body-styles">5905 Wilshire Boulevard Los Angeles, CA 90036
+				323 857-6000 | <a href="#">E-News</a> | <a href="#">Hours</a> | <a href="#">Contact Us</a></p>
+			</div>	
+		</section>
+		<section class="sidebar-right three columns">
+			<ul>
+					<li>
+						<a href="#">
+							<img src="images/sidebar_right_image1.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/sidebar_right_image2.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/sidebar_right_image3.jpg">
+						</a>
+					</li>
+				</ul>
 		</section>
 	</section>
 	<footer id="footer-wrapper">
