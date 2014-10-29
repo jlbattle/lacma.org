@@ -209,20 +209,37 @@ nav ul li:hover > ul {
   ========================================
 */
 .main-content{
-	padding-bottom: 40px;
 	padding-top: 20px;
 }
 .middle-content{
 	font-family: "Helvetica","Arial",sans-serif;	
+	width: 500px;
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+}
+.sidebar-right{
+	width: 200px;
+	display: inline-block;
+	padding-left: 10px;
+	border-left: 1px dashed gray;
+	padding-bottom: 40px;
 }
 .sidebar-right ul li{
 	margin-bottom: 25px;
+}
+.group-middle-right{
+	border-left: 1px dashed gray;
+	float: right;
 }
 .sidebar-left{
 	font-family: "Helvetica","Arial",sans-serif; 
 	color: black;
 	line-height: 16px;
 	font-size: 75%;
+	width: 240px;
+	display: inline-block;
+	float: left;
 }
 .sidebar-left ul{
 	margin-top: 5px;
@@ -303,16 +320,51 @@ nav ul li:hover > ul {
 	width: 510px;
 	margin-bottom: 15px;
 }
+.blog-top a{
+	display: block;
+	float: left;
+	background: url(images/sprites.png) top left no-repeat;
+}
 #unframed-blog{
 	background-position: -13px -227px;
 	width: 142px;
 	height: 14px;
 }
-#subscribe-blog{
-	background-position: -395px -164px;
-	width: 15px;
+#twitter-blog{
+	background-position: -13px -257px;
+	width: 49px;
 	height: 14px;
+}
+#twitter-follow-us{
+	background-position: -395px -200px;
+	height: 14px;
+	line-height: 14px;
 	float: right;
+	text-decoration: none;
+	font-size: 0.6em;
+	text-transform: uppercase;;
+	color: black;
+	padding-left: 15px;
+	position: absolute;
+	right: 58px;
+}
+#twitter-follow-us:hover{
+	text-decoration: underline;
+}
+#subscribe-blog{
+	float: right;
+	background: url(images/sprites.png) scroll no-repeat -395px -164px;
+	padding-left: 15px;
+	text-decoration: none;
+	font-size: 0.6em;
+	text-transform: uppercase;;
+	color: black;
+	height: 15px;
+	line-height: 15px;
+	padding-right: 25px;
+}
+#subscribe-blog:hover{
+	text-decoration: underline;
 }
 .subscribe-blog-text{
 	float: right;
@@ -369,8 +421,34 @@ nav ul li:hover > ul {
 	text-decoration: underline;
 }
 .twitter-section{
+	background: url(images/twitter-top.png) top left no-repeat;
 	margin-top: 2em;
+	min-height: 50px;
 	margin-bottom: 1.2em; 
+	position: relative;
+}
+.twitter-section-footer{
+	background: url(images/twitter-bottom.png) top left no-repeat;
+	height: 23px;
+}
+.twitter-content{
+	padding: 28px 26px 15px 26px;
+}
+.twitter-top{
+	margin-bottom: 0px;
+	height: 0px;
+}
+.twitter-nav{
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+.twitter-nav p{
+	font-size: 1em;
+}
+.twitter-date{
+	font-weight: bold;
+	font-size: 0.5em;
+	margin-top: 3px;
 }
 /*
   ========================================
@@ -420,10 +498,10 @@ input {
 	float: left;
 	padding-right: 15px;
 	list-style: disc;
-	color: black;
 }
 .footer-nav ul li a{
 	text-decoration: none;
+	color: black;
 }
 .footer-nav ul li a:hover{
 	text-decoration: underline;
